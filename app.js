@@ -27,5 +27,6 @@ function changePosition() {
     }
 }
 
+window.addEventListener('load', changePosition);
 document.addEventListener('scroll', changePosition);
 document.addEventListener('click', openPractice);
