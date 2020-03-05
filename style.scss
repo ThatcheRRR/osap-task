@@ -178,7 +178,7 @@ h2 {
     &::before {
         content: "";
         display: block;
-        height: 70px; /* Высота фиксированной шапки */
+        height: 70px;
         margin: -70px 0 0;
     }
 }
