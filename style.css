@@ -29,7 +29,8 @@ a {
 }
 
 .menu {
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +238,8 @@ aside {
 
 .sidebar {
   top: 100px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

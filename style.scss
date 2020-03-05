@@ -28,7 +28,8 @@ a {
 }
 
 .menu {
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -200,7 +201,7 @@ aside {
 
 .sidebar {
     top: 100px;
-    position: fixed;
+    position: sticky;
     display: flex;
     flex-wrap: wrap;
     max-width: 250px;
