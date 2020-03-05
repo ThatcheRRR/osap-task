@@ -87,7 +87,7 @@ li {
 header {
     position: absolute;
     width: 100%;
-    background-color: #2196f3;
+    background: linear-gradient(top, #386198 0%, #315890 100%);
 }
 
 .fixed-header {
@@ -207,7 +207,7 @@ aside {
     max-width: 250px;
     box-sizing: border-box;
     padding: 15px;
-    background-color: #2196f3;
+    background: linear-gradient(top, #386198 0%, #315890 100%);
     border-radius: 10px;
     &__link {
         position: relative;
