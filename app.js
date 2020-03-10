@@ -1,21 +1,19 @@
 const practice = document.querySelector('.practice-link');
 const menu = document.querySelector('.practice-menu');
 const header = document.querySelector('header');
+const sidebar = document.querySelector('.sidebar');
+const link = document.querySelectorAll('h2');
+const text = document.querySelectorAll('.text');
+const svg = document.querySelector("#Capa_1");
+const path = document.querySelector("#Capa_1 > g > g > path");
 
 function openPractice(e) {
-    practice.classList.toggle('toggled');
-    if (practice.classList.contains('toggled')) {
-        menu.style.transform = 'scaleY(1)';
-        menu.style.opacity = '1';
+    if (e.target === practice || e.target === svg || e.target === path) {
+        practice.classList.toggle('toggled');
+        menu.classList.toggle('showMenu')
     } else {
         practice.classList.remove('toggled');
-        menu.style.transform = 'scaleY(0)';
-        menu.style.opacity = '0';
-    }
-    if (e.target !== practice) {
-        practice.classList.remove('toggled');
-        menu.style.transform = 'scaleY(0)';
-        menu.style.opacity = '0';
+        menu.classList.remove('showMenu');
     }
 }
 
@@ -27,6 +25,14 @@ function changePosition() {
     }
 }
 
-window.addEventListener('load', changePosition);
-document.addEventListener('scroll', changePosition);
-document.addEventListener('click', openPractice);
+function showContent(e) {
+    e.target.nextElementSibling.classList.toggle('showText');
+    e.target.classList.toggle('anim');
+}
+
+document.onclick = openPractice;
+window.onload = changePosition;
+document.onscroll = changePosition;
+for (let i = 0; i < link.length; i++) {
+    link[i].onclick = showContent;
+}
