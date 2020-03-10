@@ -126,10 +126,9 @@ header {
     cursor: pointer;
     color: #fff;
     & > div {
-        position: absolute;
-        right: 55px;
-        height: 16px;
         width: 16px;
+        height: 16px;
+        margin-left: 15px;
         & svg {
             height: 16px;
             width: 16px;

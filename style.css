@@ -161,10 +161,9 @@ header {
 }
 
 .practice-link > div {
-  position: absolute;
-  right: 55px;
-  height: 16px;
   width: 16px;
+  height: 16px;
+  margin-left: 15px;
 }
 
 .practice-link > div svg {
