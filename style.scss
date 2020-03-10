@@ -229,6 +229,9 @@ h2 {
 }
 
 .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-height: 0;
     overflow: hidden;
     transition: 2.5s ease;

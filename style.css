@@ -275,6 +275,14 @@ h2::before {
 }
 
 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: 2.5s ease;
