@@ -223,10 +223,6 @@ li::after {
   fill: #000000;
 }
 
-.info {
-  width: 100%;
-}
-
 h2 {
   position: relative;
   width: 100%;
@@ -263,10 +259,6 @@ h2::before {
           transform: rotate(-180deg);
 }
 
-.content {
-  max-width: 1000px;
-}
-
 .content::before {
   content: "";
   display: block;
@@ -290,7 +282,7 @@ h2::before {
 }
 
 .showText {
-  max-height: 10000px;
+  max-height: 20000px;
 }
 
 main {
@@ -351,5 +343,18 @@ aside {
   left: 0;
   width: 100%;
   background-color: #fff;
+}
+
+img {
+  max-height: 540px;
+  max-width: 960px;
+  border: 1px solid #000;
+}
+
+.img-link {
+  margin: 15px 0;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

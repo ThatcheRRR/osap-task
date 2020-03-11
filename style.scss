@@ -180,10 +180,6 @@ li {
     }
 }
 
-.info {
-    width: 100%;
-}
-
 h2 {
     position: relative;
     width: 100%;
@@ -219,7 +215,6 @@ h2 {
 }
 
 .content {
-    max-width: 1000px;
     &::before {
         content: "";
         display: block;
@@ -238,7 +233,7 @@ h2 {
 }
 
 .showText {
-    max-height: 10000px;
+    max-height: 20000px;
 }
 
 main {
@@ -286,4 +281,17 @@ aside {
             background-color: #fff;
         }
     }
+}
+
+img {
+    max-height: 540px;
+    max-width: 960px;
+    border: 1px solid #000;
+}
+
+.img-link {
+    margin: 15px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
 }

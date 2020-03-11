@@ -6,6 +6,7 @@ const link = document.querySelectorAll('h2');
 const text = document.querySelectorAll('.text');
 const svg = document.querySelector("#Capa_1");
 const path = document.querySelector("#Capa_1 > g > g > path");
+const imgs = document.querySelectorAll('img');
 
 function openPractice(e) {
     if (e.target === practice || e.target === svg || e.target === path) {
@@ -30,9 +31,17 @@ function showContent(e) {
     e.target.classList.toggle('anim');
 }
 
+function showImage(e) {
+    e.target.parentElement.classList.toggle('showImage');
+}
+
 document.onclick = openPractice;
 window.onload = changePosition;
 document.onscroll = changePosition;
 for (let i = 0; i < link.length; i++) {
     link[i].onclick = showContent;
+}
+
+for (let i = 0; i < imgs.length; i++) {
+    imgs[i].onclick = showImage;
 }
